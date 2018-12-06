@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Poiret+One|Dawning+of+a+New+Day|Cinzel|Mrs+Saint+Delafield" rel="stylesheet">
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <script src="main.js"></script>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a class="navbar-brand" href="#" style="font-weight: bold; font-family: 'Mrs Saint Delafield', cursive;">Issac & Candis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#story">Our Story</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#bridegroom">Bridesmaids & Groomsmen</a>
+            </li>
+        </ul>
+        <span id="timer" class="navbar-text"></span>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 19, 2019 15:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="timer"
+                document.getElementById("timer").innerHTML = days + "Days " + hours + "Hrs "
+                    + minutes + "Mins " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timer").innerHTML = "IS TODAY!";
+                }
+            }, 1000);
+        </script>
+    </div>
+</nav>
+
+        <div id="main" class="d-flex align-items-center justify-content-center px-0">
+            <div class="text-center">
+                <h1>We're Getting<br>Married!</h1>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function resize() {
+                var heights = window.innerHeight;
+                document.getElementById("main").style.height = heights + "px";
+            }
+            resize();
+            window.onresize = function () {
+                resize();
+            };
+        </script>
+
+
+
+
+        <div id="name" class="container-fluid text-left px-0">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h1>Issac</h1>
+                    <h3>and</h3>
+                    <h1>Candis</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="location" class="container-fluid text-right px-0">
+            <div class="row justify-content-center px-0">
+                <div class="col-10">
+                    <h1>January 19, 2019</h1>
+                    <h3>Phuket, Thailand</h3>
+                </div>
+            </div>
+        </div>
+
+    <div  id="story" class="d-flex justify-content-center">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="wai.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Issac</h2>
+                        </div>
+                    </div>
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="11.jpg" alt="">
+                        <div class="overlay">
+                            <h2>We're Getting</h2>
+                        </div>
+                    </div>
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="12.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Married</h2>
+                        </div>
+                    </div>
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="yee.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Candis</h2>
+                        </div>
+                    </div>
+    </div>
+
+
+    <div id="schedule" class="container-fluid align-items-center">
+            <div class="text-center pb-5">
+                <h1>Ceremony</h1>
+                <h2>SATURDAY, JANUARY 19, 2019</h2>
+                <h2>16:00 - 17:30</h2>
+                <h2>THE NAKA PHUKET</h2>
+                <p>1/18, 1/20 Moo 6 Kamala, Kathu, Phuket 83150 Thailand</p>
+                <!-- Button code -->
+                <div title="Add to Calendar" class="addeventatc" style="font-family: 'Cinzel',sans-serif;">
+                    Add to Calendar
+                    <span class="start">01/19/2019 04:00 PM</span>
+                    <span class="end">01/19/2019 05:30 PM</span>
+                    <span class="timezone">Asia/Vientiane</span>
+                    <span class="title">Wedding Ceremony</span>
+                    <span class="location">The Naka Phuket</span>
+                </div>
+            </div>
+            <div class="text-center py-5">
+                <h1>Cocktail Reception & Wedding Party</h1>
+                <h2>SATURDAY, JANUARY 19, 2019</h2>
+                <h2>18:00 - 23:00</h2>
+                <h2>SUAY PHUKET TOWN</h2>
+                <p>50/2 Takuapa Rd, Talat Nuea, Mueang, Phuket 83000 Thailand</p>
+                <!-- Button code -->
+                <div title="Add to Calendar" class="addeventatc" style="font-family: 'Cinzel',sans-serif;">
+                    Add to Calendar
+                    <span class="start">01/19/2019 06:00 PM</span>
+                    <span class="end">01/19/2019 11:00 PM</span>
+                    <span class="timezone">Asia/Vientiane</span>
+                    <span class="title">Wedding Party</span>
+                    <span class="location">Suay Restaurant</span>
+                </div>
+            </div>
+            <div class="text-center pt-5">
+                <h1>Accomodation</h1>
+                <h2>FRIDAY & SATURDAY, JANUARY 18 - 19, 2019</h2>
+                <h2>THE NATURE PHUKET</h2>
+                <p>322 Prabaramee Road, North Patong Beach, Kathu, Phuket 83150 Thailand</p>
+                <!-- Button code -->
+                <div title="Add to Calendar" class="addeventatc" style="font-family: 'Cinzel',sans-serif;">
+                    Add to Calendar
+                    <span class="start">01/18/2019 03:00 PM</span>
+                    <span class="end">01/20/2019 11:00 AM</span>
+                    <span class="timezone">Asia/Vientiane</span>
+                    <span class="title">Wedding Party</span>
+                    <span class="location">Suay Restaurant</span>
+                    <span class="all_day_event">true</span>
+                </div>
+            </div>
+    </div>
+
+    <div id="bridegroom">
+        <div class="row pb-5">
+            <div id="left" class="col-sm-6 py-5 px-0 text-center">
+                <img src="rachel.JPG" alt="">
+                <h1>Rachel Chan</h1>
+                <h3>Maid of Honor</h3>
+            </div>
+            <div id="right" class="col-sm-6 py-5 px-0 text-center">
+                <img src="denis.PNG" alt="">
+                <h1>Denis Lau</h1>
+                <h3>Best Man</h3>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div id="left" class="col-sm-6 py-5 px-0 text-center">
+                <img src="kalie.PNG" alt="">
+                <h1>Kalie Sze</h1>
+                <h3>Bridesmaid</h3>
+            </div>
+            <div id="right" class="col-sm-6 py-5 px-0 text-center">
+                <img src="lung.JPG" alt="">
+                <h1>Kenneth Hui</h1>
+                <h3>Groomsman</h3>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div id="left" class="col-sm-6 py-5 px-0 text-center">
+                <img src="sum.PNG" alt="">
+                <h1>Sum Li</h1>
+                <h3>Bridesmaid</h3>
+            </div>
+            <div id="right" class="col-sm-6 py-5 px-0 text-center">
+                <img src="fai.png" alt="">
+                <h1>Derek Man</h1>
+                <h3>Groomsman</h3>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div id="left" class="col-sm-6 py-5 px-0 text-center">
+                <img src="yan.jpg" alt="">
+                <h1>Alison Ng</h1>
+                <h3>Bridesmaid</h3>
+            </div>
+            <div id="right" class="col-sm-6 py-5 px-0 text-center">
+                <img src="kelvin.JPG" alt="">
+                <h1>Kelvin Shum</h1>
+                <h3>Groomsman</h3>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div id="left" class="col-sm-6 py-5 px-0 text-center">
+                <img src="san.PNG" alt="">
+                <h1>San Ngan</h1>
+                <h3>Bridesmaid</h3>
+            </div>
+            <div id="right" class="col-sm-6 py-5 px-0 text-center">
+                <img src="chau.JPG" alt="">
+                <h1>Michael Chau</h1>
+                <h3>Groomsman</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div id="left" class="col-sm-6 py-5 px-0 text-center">
+                <img src="cth.JPG" alt="">
+                <h1>Isaac Chan</h1>
+                <h3>Bridesmaid</h3>
+            </div>
+            <div id="right" class="col-sm-6 py-5 px-0 text-center">
+                <img src="chris.JPG" alt="">
+                <h1>Chris Chen</h1>
+                <h3>Groomsman</h3>
+            </div>
+        </div>
+
+
+
+    </div>
+<div class="container-fluid text-center">
+    <h1 style="font-family: 'Mrs Saint Delafield', cursive; color: #21201f; font-size: 7rem;">I+C</h1>
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
